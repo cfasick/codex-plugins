@@ -1,0 +1,32 @@
+{
+  "name": "cfasick-plugins",
+  "interface": {
+    "displayName": "Cory's Plugins"
+  },
+  "plugins": [
+    {
+      "name": "api-vault",
+      "source": {
+        "source": "local",
+        "path": "./plugins/api-vault"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "crypto-base-scanner",
+      "source": {
+        "source": "local",
+        "path": "./plugins/crypto-base-scanner"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Finance"
+    }
+  ]
+}

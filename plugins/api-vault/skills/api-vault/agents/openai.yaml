@@ -1,0 +1,4 @@
+interface:
+  display_name: "API Vault"
+  short_description: "Secure APIs and project connections"
+  default_prompt: "Use $api-vault to research and securely configure a connection for this project."

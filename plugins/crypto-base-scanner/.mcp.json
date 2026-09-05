@@ -1,0 +1,35 @@
+{
+  "mcpServers": {
+    "crypto-base-scanner": {
+      "cwd": ".",
+      "command": "node",
+      "args": [
+        "./mcp/server.mjs"
+      ],
+      "enabled": true,
+      "env_vars": [
+        "CRYPTO_BASE_SCANNER_API_KEY",
+        "CRYPTO_BASE_SCANNER_AUTH_MODE"
+      ],
+      "startup_timeout_sec": 30,
+      "tool_timeout_sec": 60,
+      "default_tools_approval_mode": "auto",
+      "enabled_tools": [
+        "list_recent_bases",
+        "list_markets",
+        "quick_scan"
+      ],
+      "tools": {
+        "list_recent_bases": {
+          "output_token_limit": 12000
+        },
+        "list_markets": {
+          "output_token_limit": 12000
+        },
+        "quick_scan": {
+          "output_token_limit": 12000
+        }
+      }
+    }
+  }
+}

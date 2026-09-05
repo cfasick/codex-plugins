@@ -1,0 +1,22 @@
+{
+  "name": "api-vault",
+  "version": "0.2.0",
+  "description": "Research and securely configure APIs, databases, MCP servers, scripts, and other project connections.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "API Vault",
+    "shortDescription": "Secure APIs and project connections.",
+    "longDescription": "API Vault researches official authentication documentation, identifies required connection fields, builds or updates a secure website Connections page, offers provider-side IP allowlisting guidance, and configures local environment files for APIs, databases, MCP servers, Python scripts, SSH, OAuth, webhooks, and custom services.",
+    "developerName": "Local developer",
+    "category": "Developer Tools",
+    "capabilities": ["Research", "FrontendBuild", "LocalWrite", "CredentialSafety"],
+    "defaultPrompt": [
+      "Securely configure an API for this project.",
+      "Build a secure Connections page for this website.",
+      "Add a PostgreSQL, MCP, or Python connection."
+    ]
+  }
+}

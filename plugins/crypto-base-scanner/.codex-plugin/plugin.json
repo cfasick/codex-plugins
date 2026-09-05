@@ -1,0 +1,35 @@
+{
+  "name": "crypto-base-scanner",
+  "version": "1.0.0",
+  "description": "Read Altrady Crypto Base Scanner signals and market-drop data from Codex.",
+  "author": {
+    "name": "Local integration"
+  },
+  "homepage": "https://cryptobasescanner.docs.apiary.io/",
+  "keywords": [
+    "altrady",
+    "crypto",
+    "base-scanner",
+    "qfl",
+    "market-data"
+  ],
+  "interface": {
+    "displayName": "Crypto Base Scanner",
+    "shortDescription": "Query Altrady CBS bases and market drops.",
+    "longDescription": "A read-only local connector for Altrady's Crypto Base Scanner API, including recent broken bases, current market drops, and quick-scan results.",
+    "developerName": "Local integration",
+    "category": "Finance",
+    "capabilities": [
+      "Read",
+      "API integration"
+    ],
+    "websiteURL": "https://cryptobasescanner.docs.apiary.io/",
+    "defaultPrompt": [
+      "Show the latest Crypto Base Scanner bases.",
+      "List Binance markets for the day-trade algorithm.",
+      "Run a 15-minute Binance quick scan."
+    ],
+    "brandColor": "#00A66F"
+  },
+  "mcpServers": "./.mcp.json"
+}
