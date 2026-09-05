@@ -56,6 +56,15 @@ For a local-development site, the server-side handler may update the root `.env`
 
 If no user-visible interactive terminal is available, stop before collecting secrets and give the exact local command to run. Do not fall back to chat entry.
 
+## US crypto exchange registry
+
+For a US-focused crypto trading or portfolio project, read [references/us-crypto-exchange-registry.ts](references/us-crypto-exchange-registry.ts). It is the reusable, nonsecret source for 20 provider names, official documentation, public and private REST/WebSocket endpoints, authentication field names, environment-variable conventions, US availability notes, and capability flags.
+
+- Copy or adapt only nonsecret registry metadata into the consuming project. Never put credential values in the registry.
+- Keep providers marked `review_required`, `institutional_review`, `specialized_review`, or `broker_adapter` visible, but do not invent generic fields or claim a direct integration until the account/provider supplies the actual credential contract.
+- For Kraken, support independent primary and secondary key sets when the workload needs separate rate-limit pools. Each set contains an API key and API secret; Kraken Spot REST authentication does not add a passphrase field.
+- A permanent public endpoint registry does not mean every provider offers an anonymous market catalog or public WebSocket. Preserve `null`, `limited`, `verify`, and account-dependent states accurately.
+
 ## IP allowlisting
 
 Provider-side IP restrictions can lock out a working integration. Before directing a change, verify the official format, whether multiple IPs/CIDRs are allowed, whether changes require a new key, and which outbound address the deployed workload actually uses. Keep an emergency recovery path such as an unmodified admin session or documented key-rotation procedure. The helper validates and normalizes user-entered addresses locally, but it does not mutate the provider account.

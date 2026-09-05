@@ -1,6 +1,6 @@
 {
   "name": "api-vault",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Research and securely configure APIs, databases, MCP servers, scripts, and other project connections.",
   "author": {
     "name": "Local developer"
